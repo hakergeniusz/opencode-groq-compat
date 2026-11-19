@@ -1,0 +1,31 @@
+{
+  "name": "opencode-groq-compat",
+  "version": "0.1.0",
+  "description": "OpenCode V2 plugin: keep the groq provider compatible (max_tokens field + curated chat model catalog) and add /groq-compat status, refresh and test commands.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "groq",
+    "compat",
+    "provider"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test test/"
+  },
+  "dependencies": {
+    "@opencode/plugin": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "typescript": "latest"
+  }
+}
